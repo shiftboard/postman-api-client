@@ -12,6 +12,7 @@ For more information on the Shiftboard APIs, see the [documentation](http://www.
 
 ## Instructions
 
+0. Import this collection (*Shiftboard-API.postman_collection.json*) into your workspace
 1. Select a request in the collection, or create a new one
 2. Set the URI to **{\{shiftboardUriToken}}**
 3. Fill out `method` with the Shiftboard API method you are using, e.g., **account.get**
