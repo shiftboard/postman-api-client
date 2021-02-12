@@ -14,10 +14,11 @@ For more information on the Shiftboard APIs, see the [documentation](http://www.
 
 0. Import this collection (*Shiftboard-API.postman_collection.json*) into your workspace
 1. Select a request in the collection, or create a new one
-2. Set the URI to **{\{shiftboardUriToken}}**
-3. Fill out `method` with the Shiftboard API method you are using, e.g., **account.get**
-4. Fill out `params` *(optional)*, e.g. **{"id":108}**
-5. Select an HTTP method, either `GET` or `POST`.
+2. Set the request URI to **{\{shiftboardUri}}**
+3. Add request query params:
+  * `method` is the Shiftboard API method you are using, e.g., **account.get**
+  * `params` *(optional)*, are the API method params as JSON, e.g. **{"id":108}**
+5. Select an HTTP method for the request, either `GET` or `POST`.
   * For `POST` requests, set the request *Body* to **{\{postData}}**
 6. Set your *Environment* (see below)
 7. Hit *Send*
@@ -27,7 +28,7 @@ For more information on the Shiftboard APIs, see the [documentation](http://www.
 
 To use these requests, you must have an *Environment* with three keys and values:
 
-* `accessKeyId` - your unique API key from Shiftboard
+* `accessKeyID` - your unique API key from Shiftboard
 * `secretKey` - your secret key from Shiftboard
 * `shiftboardUri` - the URI for the API, e.g.:
   * Shiftboard in U.S. / Canada: **https://api.shiftdata.com/**
