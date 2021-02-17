@@ -128,6 +128,217 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "timeOffRequest.approve",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{{postData}}"
+				},
+				"url": {
+					"raw": "{{shiftboardUri}}?method=timeOffRequest.approve&params={ \"id\": 1, \"status_reason\": \"good behavior\" }",
+					"host": [
+						"{{shiftboardUri}}"
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "timeOffRequest.approve"
+						},
+						{
+							"key": "params",
+							"value": "{ \"id\": 1, \"status_reason\": \"good behavior\" }"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "timeOffRequest.get",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{{postData}}"
+				},
+				"url": {
+					"raw": "{{shiftboardUri}}?method=timeOffRequest.get&params={ \"id\": 1 }",
+					"host": [
+						"{{shiftboardUri}}"
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "timeOffRequest.get"
+						},
+						{
+							"key": "params",
+							"value": "{ \"id\": 1 }"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "timeOffRequest.deny",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{{postData}}"
+				},
+				"url": {
+					"raw": "{{shiftboardUri}}?method=timeOffRequest.deny&params={ \"id\": 1, \"status_reason\": \"bad behavior\" }",
+					"host": [
+						"{{shiftboardUri}}"
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "timeOffRequest.deny"
+						},
+						{
+							"key": "params",
+							"value": "{ \"id\": 1, \"status_reason\": \"bad behavior\" }"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "timeOffRequest.update",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{{postData}}"
+				},
+				"url": {
+					"raw": "{{shiftboardUri}}?method=timeOffRequest.update&params={ \"id\": 1, \"status_reason\": \"good behavior\", \"status\": 2 }",
+					"host": [
+						"{{shiftboardUri}}"
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "timeOffRequest.update"
+						},
+						{
+							"key": "params",
+							"value": "{ \"id\": 1, \"status_reason\": \"good behavior\", \"status\": 2 }"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "timeOffRequest.list",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{{postData}}"
+				},
+				"url": {
+					"raw": "{{shiftboardUri}}?method=timeOffRequest.list",
+					"host": [
+						"{{shiftboardUri}}"
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "timeOffRequest.list"
+						},
+						{
+							"key": "params",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
